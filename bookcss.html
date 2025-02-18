@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="book.html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Book Now Button</title>
+    <style>
+        /* Reset some default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Center the button in the middle of the page */
+        .button-container {
+            text-align: center;
+        }
+
+        /* Style for the button */
+        .book-now-btn {
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button hover effect with animation */
+        .book-now-btn:hover {
+            background-color: #45a049;
+            transform: scale(1.1); /* Slightly enlarge the button */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+        }
+
+        /* Animation effect */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .book-now-btn {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now Button</title>
+    <style>
+        /* Reset some default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Center the button container */
+        .button-container {
+            text-align: center;
+        }
+
+        /* Style for the button */
+        .book-now-btn {
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;  /* Pulse animation */
+        }
+
+        /* Button hover effect */
+        .book-now-btn:hover {
+            background-color: #45a049;
+            transform: scale(1.1); /* Slightly enlarge the button */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+        }
+
+        /* Animation effect: Pulse */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body
+    <!-- Book Now Button -->
+    <button class="book-now-btn" onclick="redirectToWhatsApp()">Book Now</button>
+
+    <script>
+        // Function to redirect to WhatsApp with a pre-filled message
+        function redirectToWhatsApp() {
+            const phoneNumber = '+9779709101920'; // Replace with your phone number
+            const message = 'Hi, I would like to book now.'; // The default message you want
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.location.href = url; // Redirect to WhatsApp
+        }
+    </script>
+</body>
+</html>
