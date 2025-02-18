@@ -49,7 +49,7 @@ body {
 /* Hero Section with Background Image */
 .hero {
     height: 100vh;
-    background: url('file:///C:/Users/Dell/Desktop/IMG_6053.JPG') no-repeat center center/cover;
+    background: url('https://raw.githubusercontent.com/HotelRoyalMithila/HotelRoyalMithila/refs/heads/main/istockphoto-1349223345-612x612.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
