@@ -360,7 +360,7 @@ body {
 /* Hero Section Styling */
 .hero {
     position: relative;
-    background-image: url('file:///C:/Users/Dell/Desktop/IMG_6053.JPG'); /* Add your background image */
+    background-image: url('https://raw.githubusercontent.com/HotelRoyalMithila/HotelRoyalMithila/refs/heads/main/IMG_6052.JPG'); /* Add your background image */
     background-size: cover;
     background-position: center;
     min-height: 100vh;
